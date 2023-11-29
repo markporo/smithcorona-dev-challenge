@@ -34,8 +34,8 @@ export default function Carousel() {
             className={styles.images}
             src={item.imageUrl}
             alt={item.alt}
-            width='400'
-            height='400' />
+            width='350'
+            height='350' />
         ))}
       </div>
       <Image
