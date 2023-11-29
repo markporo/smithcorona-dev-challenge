@@ -1,20 +1,30 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Image from "next/image";
-import { Items } from "../public/carouselItems.json"
 import styles from "../styles/carousel.module.scss";
 import leftChevron from '../public/images/left-chevron.png'
 import rightChevron from '../public/images/right-chevron.png'
 
 export default function Carousel() {
-  // const [slide, setSlide] = useState(0);
 
-  // const nextSlide = () => {
-  //   setSlide(slide === data.length - 1 ? 0 : slide + 1);
-  // };
+  const Items = [
+    {
+      "id": 1,
+      "alt": "Photography",
+      "imageUrl": "/images/purple-label.png"
+    },
+    {
+      "id": 2,
+      "alt": "City Views",
+      "imageUrl": "/images/white-label.png"
+    },
+    {
+      "id": 3,
+      "alt": "Wild Life",
+      "imageUrl": "/images/black-label.png"
+    }
 
-  // const prevSlide = () => {
-  //   setSlide(slide === 0 ? data.length - 1 : slide - 1);
-  // };
+  ]
+
 
   return (
     <div className={styles.container}>
@@ -23,8 +33,8 @@ export default function Carousel() {
         className={styles['left-chevron']}
         src={leftChevron}
         alt='<'
-        width='30'
-        height='30'
+        width='25'
+        height='25'
       />
 
       <div className={styles.carousel}>
@@ -42,8 +52,8 @@ export default function Carousel() {
         className={styles['right-chevron']}
         src={rightChevron}
         alt='>'
-        width='30'
-        height='30'
+        width='25'
+        height='25'
       />
     </div>
   );
