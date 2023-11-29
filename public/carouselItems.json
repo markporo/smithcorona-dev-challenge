@@ -1,0 +1,20 @@
+{
+  "Items": [
+    {
+      "id": 1,
+      "alt": "Photography",
+      "imageUrl": "/images/purple-label.png"
+    },
+    {
+      "id": 2,
+      "alt": "City Views",
+      "imageUrl": "/images/white-label.png"
+    },
+    {
+      "id": 3,
+      "alt": "Wild Life",
+      "imageUrl": "/images/black-label.png"
+    }
+
+  ]
+}
