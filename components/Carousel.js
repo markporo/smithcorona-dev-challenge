@@ -35,6 +35,7 @@ export default function Carousel() {
         alt='<'
         width='25'
         height='25'
+        loading='lazy'
       />
 
       <div className={styles.carousel}>
@@ -45,7 +46,9 @@ export default function Carousel() {
             src={item.imageUrl}
             alt={item.alt}
             width='350'
-            height='350' />
+            height='350' 
+            loading='lazy'
+            />
         ))}
       </div>
       <Image
@@ -54,6 +57,7 @@ export default function Carousel() {
         alt='>'
         width='25'
         height='25'
+        loading='lazy'
       />
     </div>
   );

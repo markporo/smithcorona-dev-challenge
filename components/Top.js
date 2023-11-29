@@ -14,8 +14,8 @@ export default function Top() {
                 sizes='(max-width: 768) 100px, (max-width: 1200px) 300px, 500px'
                 width={500}
                 height={889}
-                loading="lazy"
                 alt="Jar of Apricot Jam"
+                priority='true'
             />
             <Header title="PRODUCT OVERVIEW" />
             <p>
